@@ -13,12 +13,15 @@ import java.net.Socket;
  */
 public class App 
 {
+
     public static void main( String[] args )
     {
+        Client user = new Client();
         try {
             System.out.println("Server avviato");
             ServerSocket server = new ServerSocket(3000);
             Socket s = server.accept();
+
             System.out.println("in client si è ocnnesso");
             BufferedReader in = new BufferedReader(new InputStreamReader(s.getInputStream()));
             DataOutputStream out = new DataOutputStream(s.getOutputStream());
