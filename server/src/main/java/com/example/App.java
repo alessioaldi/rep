@@ -16,7 +16,7 @@ public class App
 
     public static void main( String[] args )
     {
-        Client user = new Client();
+
         try {
             System.out.println("Server avviato");
             ServerSocket server = new ServerSocket(3000);
